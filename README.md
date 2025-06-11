@@ -81,5 +81,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Yunus Teke - yunus.teke@metu.edu.tr
+Yunus Teke - yunus.teke@metu.edu.tr  
 Atakan Karataş - atakankaratas100@gmail.com
