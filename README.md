@@ -81,6 +81,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - your.email@example.com
+Yunus Teke - yunus.teke@metu.edu.tr
 
-Project Link: [https://github.com/yourusername/student_performance_prediction](https://github.com/yourusername/student_performance_prediction) 
