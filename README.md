@@ -1,38 +1,24 @@
-# Student Performance Prediction App
+# Student Performance Prediction System
 
-A Streamlit-based application that uses machine learning to predict student performance and identify at-risk students. The app processes student data, Moodle logs, and course activities to provide actionable insights and recommendations.
+This is a Streamlit-based web application that predicts student performance using machine learning models. The system can analyze various factors affecting student performance and provide predictions based on different models.
 
 ## Features
 
-- **Multiple Model Support**
-  - Random Forest
-  - XGBoost
-  - Neural Network
-  - Easy model switching and comparison
-
-- **Flexible Input Methods**
-  - Individual student prediction
-  - Bulk prediction via Excel upload
-  - Raw Moodle logs processing
-
-- **Comprehensive Analysis**
-  - Performance predictions
-  - Risk level assessment
-  - Personalized recommendations
-  - Historical data comparison
-
-- **User-Friendly Interface**
-  - Interactive input forms
-  - Real-time predictions
-  - Visual performance insights
-  - Easy result downloads
+- Multiple prediction models:
+  - Full Model (includes midterm grades)
+  - Early Warning Model (without midterm grades)
+  - Custom Model training capability
+- Real-time performance prediction
+- Feature importance visualization
+- Model training and evaluation tools
+- Support for custom model training with user data
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/student-performance-prediction.git
-cd student-performance-prediction
+git clone https://github.com/yourusername/student_performance_prediction.git
+cd student_performance_prediction
 ```
 
 2. Create a virtual environment (recommended):
@@ -41,82 +27,60 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install required packages:
+3. Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Running the App
+## Usage
 
-1. Activate your virtual environment (if not already activated):
-```bash
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-2. Start the Streamlit app:
+1. Start the Streamlit application:
 ```bash
 streamlit run app.py
 ```
 
-3. Open your browser and navigate to:
-```
-http://localhost:8501
-```
+2. Open your web browser and navigate to the URL shown in the terminal (typically http://localhost:8501)
+
+3. Use the application:
+   - Select a prediction model
+   - Input student data
+   - View predictions and feature importance
+   - Train custom models if needed
 
 ## Project Structure
 
-```
-student-performance-prediction/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-├── how_to_use.md         # User guide
-├── models/               # Trained model files
-│   ├── random_forest/
-│   ├── xgboost/
-│   └── neural_network/
-├── data/                 # Data storage
-│   ├── raw/             # Raw input data
-│   └── processed/       # Processed data
-└── logs/                # Application logs
-```
+- `app.py`: Main application file
+- `models/`: Directory containing trained models
+- `training_logs/`: Directory for storing training logs
+- `requirements.txt`: Project dependencies
+- `README.md`: Project documentation
 
-## Usage
+## Data Requirements
 
-For detailed instructions on using the application, please refer to the [How to Use Guide](how_to_use.md).
-
-## Requirements
-
-- Python 3.8+
-- Streamlit
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- TensorFlow
-- Other dependencies listed in `requirements.txt`
+The application can work with various types of student data, including:
+- Attendance records
+- Assignment submissions
+- Quiz attempts
+- Course module views
+- Other activity logs
+- Grade information
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
-- Streamlit for the web framework
-- Scikit-learn for machine learning tools
-- XGBoost for gradient boosting implementation
-- TensorFlow for neural network capabilities
+- Built with Streamlit
+- Uses scikit-learn for machine learning models
+- Matplotlib for visualizations
 
 ## Contact
 
 Your Name - your.email@example.com
 
-Project Link: [https://github.com/yourusername/student-performance-prediction](https://github.com/yourusername/student-performance-prediction) 
+Project Link: [https://github.com/yourusername/student_performance_prediction](https://github.com/yourusername/student_performance_prediction) 
