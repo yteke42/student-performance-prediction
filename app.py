@@ -11,6 +11,7 @@ import re
 import pickle
 import io
 
+
 # Set page config
 st.set_page_config(
     page_title="Student Performance Predictor",
