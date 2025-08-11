@@ -24,7 +24,12 @@ cd student_performance_prediction
 2. Create a virtual environment (recommended):
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# On Unix/Linux:
+source venv/bin/activate
+
+# On Windows:
+venv\Scripts\activate
 ```
 
 3. Install the required packages:
