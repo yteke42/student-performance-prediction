@@ -180,8 +180,8 @@ def load_models_and_scalers():
             n_features = models["Custom Model"].feature_importances_.shape[0]
             # Create a list of feature names based on the number of features
             base_features = ['attendance', 'total_bonus_points', 'total_lab_points', 'total_quiz_points', 
-                           'total_practice_points', 'submission_submitted', 'course_module_viewed', 
-                           'other_activities', 'quiz_attempt_submitted']
+                            'total_practice_points', 'submission_submitted', 'course_module_viewed', 
+                            'other_activities', 'quiz_attempt_submitted']
             # If we have more features than base features, it means midterm grade is included
             if n_features > len(base_features):
                 model_features["Custom Model"] = base_features + ['midterm_grade']
